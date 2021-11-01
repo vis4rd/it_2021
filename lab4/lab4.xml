@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<body>
+    <lab>
+        <title>Task 1</title>
+        This site (html version) is a part of the first task. Task content:
+        <task_content>
+			Przygotować stronę na serwerze Pascal ( katalog labs/index.html ) opracowaną w HTML5 z wykorzystaniem styli CSS umożliwiającą wyświetlenie zadań realizowanych na 
+        	kolejnych zajęciach w formie jednej strony z linkami do opracowanych stron na serwerze Pascal i w chmurze obliczeniowej IBM Cloud. Strony w chmurze obliczeniowej IBM Cloud
+       		będziemy realizować od laboratorium nr. 3.
+		</task_content>
+		So the link to the solution is: <a href="index.html">http://pascal.fis.agh.edu.pl/~9kluczka/index.html</a>.
+    </lab>
+	<lab>
+        <title>Task 2</title>
+        The XML version of this site is the second task:
+        <task_content>
+            Przygotować stronę na serwerze Pascal ( katalog labs/index.xml ) opracowaną w języku XML z wykorzystaniem styli CSS umożliwiającą wyświetlenie zadań realizowanych
+            na kolejnych zajęciach w formie jednej strony. Obsługa przekierowanie do innych stron (linki) nie działają z wykorzystaniem tej metody formatowania dokumentu XML.
+        </task_content>
+        The link to the XML version: <a href="index.xml">http://pascal.fis.agh.edu.pl/~9kluczka/labs/index.xml</a>
+    </lab>
+</body>
