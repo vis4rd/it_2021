@@ -1,11 +1,15 @@
-<?xml version="1.0"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
-<xsl:output method="html" version="1.0" indent="yes" doctype-system="about:legacy-compact"/>
-
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html"
+    version="1.0"
+    indent="yes"
+    encoding="utf-8" />
 <xsl:template match="/">
     <html>
         <head>
-            <link rel="stylesheet" href="style.css"/>
+            <link rel="stylesheet" href="../styles/styles.css"/>
             <title>Kluczka - Internet Technology</title>
         </head>
         <body>
@@ -36,7 +40,7 @@
     </html>
 </xsl:template>
 
-<xsl:template match="lab" >
+<xsl:template match="lab">
     <div class="parag">
         <h2><xsl:value-of select="title" /></h2>
         <blockquote><xsl:value-of select="task_content" /></blockquote>
