@@ -5,7 +5,8 @@
 <xsl:output method="html"
     version="1.0"
     indent="yes"
-    encoding="utf-8" />
+    encoding="utf-8"/>
+<xsl:param name="sortby">count</xsl:param>
 
 <xsl:template match="/">
     <html lang="pl-PL">
@@ -22,13 +23,35 @@
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th id="name">Name</th>
-                            <th>Count</th>
-                            <th>Price</th>
+                            <th id="name"><a href="?sortby=name">Name</a></th>
+                            <th><a href="?sortby=count">Count</a></th>
+                            <th><a href="?sortby=price">Price</a></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <xsl:apply-templates select="store" />
+                        <xsl:for-each select="//group">
+                            <xsl:call-template name="templ_group"/>
+                            <xsl:if test="$sortby = 'name'">
+                                <xsl:for-each select="item">
+                                    <xsl:sort select="name/text()" data-type="text"/>
+                                    <xsl:call-template name="templ_item"/>
+                                </xsl:for-each>
+                            </xsl:if>
+
+                            <xsl:if test="$sortby = 'count'">
+                                <xsl:for-each select="item">
+                                    <xsl:sort select="count/text()" data-type="number"/>
+                                    <xsl:call-template name="templ_item"/>
+                                </xsl:for-each>
+                            </xsl:if>
+
+                            <xsl:if test="$sortby = 'price'">
+                                <xsl:for-each select="item">
+                                    <xsl:sort select="price/text()" data-type="number"/>
+                                    <xsl:call-template name="templ_item"/>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:for-each>
                     </tbody>
                 </table>
             </div>
@@ -37,14 +60,13 @@
     </html>
 </xsl:template>
 
-<xsl:template match="group">
+<xsl:template name="templ_group">
     <tr>
         <td class="group" colspan="4"><xsl:value-of select="@name"/></td>
     </tr>
-    <xsl:apply-templates select="item" />
 </xsl:template>
 
-<xsl:template match="item">
+<xsl:template name="templ_item">
     <tr>
         <td><xsl:number/></td>
         <td><xsl:value-of select="name"/></td>
