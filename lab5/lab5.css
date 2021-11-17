@@ -1,0 +1,87 @@
+html
+{
+	font-size: 16px;
+	color: #E0E0E0;
+}
+
+body
+{
+	background-color: #1F1F1F;
+	font-family: monospace;
+
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.parag
+{
+	background-color: #3D3D3D;
+	width: 60%;
+	max-width: 900px;
+	min-width: 300px;
+	text-align: center;
+
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+a, a:visited
+{
+	text-decoration: none;
+	color: #A5E6E6;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+table
+{
+	text-align: center;
+	width: 100%;
+	border-collapse: collapse; /*DEBUG*/
+}
+
+#name
+{
+	width: 70%;
+}
+
+thead
+{
+	text-align: center;
+	height: 40px;
+	background-color: #1F1F1F;
+	/*color: #A5E6E6;*/
+}
+
+th
+{
+	font-weight: bold;
+	width: 100px;
+}
+
+td
+{
+	height: 35px;
+}
+
+tr:nth-child(even)
+{
+	background-color: #525252;
+}
+
+.group
+{
+	background-color: #4D4646;
+}
+
+/*DEBUG*/
+tr, th, thead, td
+{
+	border: 1px solid white;
+}

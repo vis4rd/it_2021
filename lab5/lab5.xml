@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="lab5.xsl" type="text/xsl"?>
+
+<store>
+	<group name="Books">
+		<item>
+			<name>The Hobbit - J. R. R. Tolkien</name>
+			<count>3</count>
+			<price>10.60</price>
+		</item>
+		<item>
+			<name>Deep Work - Cal Newport</name>
+			<count>5</count>
+			<price>13.40</price>
+		</item>
+		<item>
+			<name>Harry Potter and the Philosopher's Stone - J. K. Rowling</name>
+			<count>2</count>
+			<price>19.90</price>
+		</item>
+		<item>
+			<name>De revolutionibus orbium coelestium - Nicolai Copernici</name>
+			<count>1</count>
+			<price>133.70</price>
+		</item>
+		<item>
+			<name>Pan Lodowego Ogrodu - Jarosław Grzędowicz</name>
+			<count>3</count>
+			<price>10.20</price>
+		</item>
+		<item>
+			<name>Leviathan Wakes - James S. A. Corey</name>
+			<count>2</count>
+			<price>13.60</price>
+		</item>
+	</group>
+	<group name="Albums">
+		<item>
+			<name>A Moon Shaped Pool - Radiohead</name>
+			<count>8</count>
+			<price>17.00</price>
+		</item>
+		<item>
+			<name>With Us Until You're Dead - Archive</name>
+			<count>1</count>
+			<price>70.00</price>
+		</item>
+		<item>
+			<name>SYML - SYML</name>
+			<count>4</count>
+			<price>46.00</price>
+		</item>
+		<item>
+			<name>Dawn - RY X</name>
+			<count>11</count>
+			<price>65.00</price>
+		</item>
+		<item>
+			<name>Love Me Whole - MISSIO</name>
+			<count>9</count>
+			<price>50.00</price>
+		</item>
+		<item>
+			<name>A Lesson Unlearnt - Until The Ribbon Breaks</name>
+			<count>5</count>
+			<price>10.00</price>
+		</item>
+	</group>
+	<group name="Movies">
+		<item>
+			<name>The Revenant</name>
+			<count>2</count>
+			<price>15.00</price>
+		</item>
+		<item>
+			<name>The Prestige</name>
+			<count>3</count>
+			<price>18.00</price>
+		</item>
+		<item>
+			<name>Birdman</name>
+			<count>7</count>
+			<price>15.00</price>
+		</item>
+		<item>
+			<name>Blade Runner 2049</name>
+			<count>1</count>
+			<price>15.00</price>
+		</item>
+		<item>
+			<name>Sicario</name>
+			<count>4</count>
+			<price>7.40</price>
+		</item>
+		<item>
+			<name>Casino Royale</name>
+			<count>4</count>
+			<price>9.00</price>
+		</item>
+	</group>
+</store>
