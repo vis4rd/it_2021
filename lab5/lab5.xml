@@ -2,7 +2,6 @@
 <?xml-stylesheet href="lab5.xsl" type="text/xsl"?>
 
 <store>
-	<sortby>name</sortby>
 	<group name="Books">
 		<item>
 			<name>The Hobbit - J. R. R. Tolkien</name>

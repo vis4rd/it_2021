@@ -12,7 +12,7 @@ xsldom = etree.parse(xslfile)
 transform = etree.XSLT(xsldom)
 
 form = cgi.FieldStorage()
-sortby = form.getvalue('sortby', 'name')
+sortby = form.getvalue('sortby', 'none')
 result = transform(xmldom, sortby=f"'{sortby}'")
 
 print("Content-type: text/html")

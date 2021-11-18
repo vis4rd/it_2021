@@ -6,12 +6,12 @@
     version="1.0"
     indent="yes"
     encoding="utf-8"/>
-<xsl:param name="sortby">count</xsl:param>
+<xsl:param name="sortby">name</xsl:param>
 
 <xsl:template match="/">
     <html lang="pl-PL">
         <head>
-            <link rel="stylesheet" href="lab5.css"/>
+            <link rel="stylesheet" href="../lab5.css"/>
             <title>Laboratorium 5</title>
         </head>
         <body>
@@ -22,7 +22,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>No.</th>
+                            <th><a href="?sortby=none">No.</a></th>
                             <th id="name"><a href="?sortby=name">Name</a></th>
                             <th><a href="?sortby=count">Count</a></th>
                             <th><a href="?sortby=price">Price</a></th>
@@ -31,6 +31,12 @@
                     <tbody>
                         <xsl:for-each select="//group">
                             <xsl:call-template name="templ_group"/>
+                            <xsl:if test="$sortby = 'none'">
+                                <xsl:for-each select="item">
+                                    <xsl:call-template name="templ_item"/>
+                                </xsl:for-each>
+                            </xsl:if>
+
                             <xsl:if test="$sortby = 'name'">
                                 <xsl:for-each select="item">
                                     <xsl:sort select="name/text()" data-type="text"/>
