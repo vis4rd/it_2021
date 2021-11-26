@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../lab6.css">
+	<title>Kluczka - Internet Technology</title>
+	<script type="text/javascript" src="../lab6.js"></script>
+</head>
+<body>
+	<div class="parag">
+		<h1>Task 6 - Forms</h1>
+	</div>
+	<nav>
+		<div class="navbar-entry" id="nav-active">
+			input
+		</div>
+		<div class="navbar-entry">
+			<a href="output_lab6.cgi">output</a>
+		</div>
+	</nav>
+	<div class="parag" id="form_wrapper">
+		<form name="form1" action="input_lab6.cgi" method="post">
+			<input type="text" size="16" value="name" name="field_name"> <span id="f_name_err"></span> <br>
+			<input type="text" size="16" value="surname" name="field_surname"> <span id="f_surname_err"></span> <br>
+			<input type="text" size="30" value="e-mail" name="field_mail"> <span id="f_mail_err"></span> <br>
+			<select name="field_year" size="1" required>
+				<option value="99" selected disabled>Choose year:</option>
+				<option value="1">1st Year</option>
+				<option value="2">2nd Year</option>
+				<option value="3">3rd Year</option>
+				<option value="4">4th Year</option>
+			</select>
+			<span id="f_year_err"></span> <br><br>
+			<input type="submit" value="Submit" onclick="return validate()"> <span id="submit_err"></span>
+		</form>
+		<span id="output"></span> <!-- DEBUG -->
+	</div>
+</body>
+</html>

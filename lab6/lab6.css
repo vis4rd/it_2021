@@ -1,0 +1,149 @@
+html
+{
+	margin: 0%;
+	font-size: 16px;
+	color: #E0E0E0;
+}
+
+body
+{
+	background-color: #1F1F1F;
+	font-family: monospace;
+	
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+h2
+{
+	margin-top: 0px;
+}
+
+nav
+{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	background-color: #3D3D3D;
+
+	width: 60%;
+	max-width: 900px;
+	min-width: 300px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.navbar-entry
+{
+	width: 15%;
+	min-width: 90px;
+	max-width: 150px;
+
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	font-size: 18px;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+#nav-active
+{
+	text-decoration: underline;
+	font-weight: bold;
+	color: #E0E0E0;
+}
+
+.parag
+{
+	background-color: #3D3D3D;
+	width: 60%;
+	max-width: 900px;
+	min-width: 300px;
+	text-align: center;
+
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.parag, nav
+{
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+#form_wrapper
+{
+	text-align: left;
+}
+
+form
+{
+	margin-left: 9px;
+}
+
+input
+{
+	width: 30%;
+}
+
+#f_name_err, #f_surname_err, #f_mail_err, #f_year_err, #submit_err
+{
+	font-size: 14px;
+	color: red;
+}
+
+a, a:visited
+{
+	text-decoration: none;
+	color: #A5E6E6;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+#table_wrapper
+{
+	padding: 0px;
+}
+
+table
+{
+	text-align: center;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead
+{
+	text-align: center;
+	height: 40px;
+	background-color: #1F1F1F;
+}
+
+th
+{
+	font-weight: bold;
+	width: 100px;
+}
+
+td
+{
+	height: 35px;
+}
+
+tr:nth-child(even)
+{
+	background-color: #525252;
+}
+
+tr, th, thead, td
+{
+	border: 1px solid white;
+}
