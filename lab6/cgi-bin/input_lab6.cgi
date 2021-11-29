@@ -13,9 +13,10 @@ f_name = form.getvalue('field_name')
 f_surname = form.getvalue('field_surname')
 f_mail = form.getvalue('field_mail')
 f_year = form.getvalue('field_year')
+f_pass = form.getvalue('field_password')
 list = [f_name, f_surname, f_mail, f_year]
 
-if (list[0] and list[1] and list[2] and list[3]):
+if (list[0] and list[1] and list[2] and list[3] and (f_pass == "<redacted>")):
 	# write form values into a csv file
 	csv_filename = "data_lab6.csv"
 	with open(csv_filename, 'a') as csvfile: 

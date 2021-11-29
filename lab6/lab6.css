@@ -90,7 +90,7 @@ input
 	width: 30%;
 }
 
-#f_name_err, #f_surname_err, #f_mail_err, #f_year_err, #submit_err
+#f_name_err, #f_surname_err, #f_mail_err, #f_year_err, #submit_err, #f_password_err
 {
 	font-size: 14px;
 	color: red;
