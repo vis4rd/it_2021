@@ -11,7 +11,7 @@
 <xsl:template match="/">
     <html lang="pl-PL">
         <head>
-            <link rel="stylesheet" href="../lab5.css"/>
+            <link rel="stylesheet" href="../../labs/lab5/lab5.css"/>
             <title>Laboratorium 5</title>
         </head>
         <body>

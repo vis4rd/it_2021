@@ -56,7 +56,7 @@ function validate()
 		year_good = true;
 	}
 
-	if(document.form1.field_password.value == "<redacted>")
+	if(document.form1.field_password.value.length > 0)
 	{
 		pass_good = true;
 	}

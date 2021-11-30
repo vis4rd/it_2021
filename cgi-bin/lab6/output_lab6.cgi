@@ -29,7 +29,7 @@ def insertTable(target):
     <tbody>"""
 
     # retrieve data from the csv file
-    csv_filename = "data_lab6.csv"
+    csv_filename = "labs/lab6/data_lab6.csv"
     if os.path.isfile(csv_filename):
         with open(csv_filename, 'r') as csvfile:
             reader = csv.reader(csvfile)
@@ -50,7 +50,7 @@ site = """Content-type: text/html
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../lab6.css">
+    <link rel="stylesheet" href="../../labs/lab6/lab6.css">
     <title>Kluczka - Internet Technology</title>
 </head>
 <body>
