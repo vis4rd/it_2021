@@ -9,7 +9,7 @@
 <xsl:template match="/">
     <html>
         <head>
-            <link rel="stylesheet" href="../styles/styles.css"/>
+            <link rel="stylesheet" href="../../styles/style.css"/>
             <title>Kluczka - Internet Technology</title>
         </head>
         <body>

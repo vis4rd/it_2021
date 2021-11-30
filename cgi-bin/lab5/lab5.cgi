@@ -4,8 +4,8 @@ sys.stderr = sys.stdout
 import cgi
 from lxml import etree
 
-xmlfile = open('labs/lab5/lab5.xml')
-xslfile = open('labs/lab5/lab5.xsl')
+xmlfile = open('../../labs/lab5/lab5.xml')
+xslfile = open('../../labs/lab5/lab5.xsl')
 
 xmldom = etree.parse(xmlfile)
 xsldom = etree.parse(xslfile)

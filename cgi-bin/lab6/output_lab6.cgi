@@ -29,7 +29,7 @@ def insertTable(target):
     <tbody>"""
 
     # retrieve data from the csv file
-    csv_filename = "labs/lab6/data_lab6.csv"
+    csv_filename = "../../labs/lab6/data_lab6.csv"
     if os.path.isfile(csv_filename):
         with open(csv_filename, 'r') as csvfile:
             reader = csv.reader(csvfile)
