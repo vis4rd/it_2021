@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="lab7.css">
+	<title>Kluczka - Internet Technology</title>
+	<script type="text/javascript" src="lab7.js"></script>
+</head>
+<body>
+	<div class="parag" id="centercontent">
+		<h1>Task 7 - Forms</h1>
+	</div>
+	<form name="quiz" id="quiz" action="#">
+		<div class="parag">
+			1. Która z odpowiedzi jest prawidłowa?<br>
+			<input type="radio" name="q1" value="a">a) Wszystkie poniższe<br>
+			<input type="radio" name="q1" value="b">b) Żadne z poniższych<br>
+			<input type="radio" name="q1" value="c">c) Jedno z powyższych<br>
+			<input type="radio" name="q1" value="d">d) Żadne z poniższych<br>
+			<input type="radio" name="q1" value="e">e) Żadne z powyższych<br>
+			<input type="radio" name="q1" value="f">f) Żadne z powyższych<br>
+		</div>
+		<div class="parag">
+			2. Liczba naturalna 0 &#60 X &#60 5 jest równa:<br>
+			<input type="radio" name="q2" value="a">a) 0, jeśli ta odpowiedź jest prawdziwa<br>
+			<input type="radio" name="q2" value="b">b) 1, jeśli poniższe odpowiedzi są fałszywe<br>
+			<input type="radio" name="q2" value="c">c) 2, jeśli jedna z powyższych odpowiedzi jest prawdziwa<br>
+			<input type="radio" name="q2" value="d">d) 3, jeśli odpowiedź pierwsza jest prawdziwa<br>
+			<input type="radio" name="q2" value="e">e) 4, jeśli poniższa odpowiedź jest fałszywa<br>
+			<input type="radio" name="q2" value="f">f) 5, jeśli powyższa odpowiedź jest prawdziwa<br>
+		</div>
+		<div class="parag">
+			3. Ile jest maksymalnie dobrych odpowiedzi na to pytanie?<br>
+			<input type="radio" name="q3" value="a">a) 0<br>
+			<input type="radio" name="q3" value="b">b) 1<br>
+			<input type="radio" name="q3" value="c">c) 2<br>
+			<input type="radio" name="q3" value="d">d) 4<br>
+			<input type="radio" name="q3" value="e">e) 6<br>
+		</div>
+		<div class="parag">
+			Prześlij swoje odpowiedzi: 
+			<input type="button" value="submit" onclick="readAnswers()" id="noscale">
+			<span id="error_info"></span>
+		</div>
+	</form>
+	<div class="parag results">
+		<h2>Pytanie 1)</h2>
+		<br>
+		<canvas id="canv"></canvas>
+	</div>
+	<div class="parag results">
+		<h2>Pytanie 2)</h2>
+		<br>
+		<canvas id="canv2"></canvas>
+	</div>
+	<div class="parag results">
+		<h2>Pytanie 3)</h2>
+		<br>
+		<canvas id="canv3"></canvas>
+	</div>
+</body>
+</html>

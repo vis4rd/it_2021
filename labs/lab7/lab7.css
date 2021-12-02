@@ -1,0 +1,80 @@
+html
+{
+	margin: 0%;
+	font-size: 16px;
+	color: #E0E0E0;
+}
+
+body
+{
+	background-color: #1F1F1F;
+	font-family: monospace;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2
+{
+	margin-top: 0px;
+}
+
+.parag
+{
+	background-color: #3D3D3D;
+	width: 100%;
+	max-width: 900px;
+	min-width: 300px;
+
+	padding: 9px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.parag:hover
+{
+	scale: 1.01;
+}
+
+form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+input
+{
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
+input:hover
+{
+	scale: 1.4;
+}
+
+#noscale:hover
+{
+	scale: 1;
+}
+
+#centercontent
+{
+	text-align: center;
+}
+
+canvas
+{
+	border: 1px dashed white;
+}
+
+.results
+{
+	text-align:  center;
+}
