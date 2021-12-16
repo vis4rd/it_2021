@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel='stylesheet' href='lab9.css'>
+        <title>Task 9 - Sign Up/In</title>
+        <script src="lab9signincheck.js"></script>
+    </head>
+
+    <body>
+        <div class="parag">
+            <h2>Sign Up / Sign In</h2>
+        </div>
+
+        <div class="parag">
+            If you already own an account, pass in your email and password.<br>
+            Otherwise, create a new account by specifying a new email and password.<br>
+            Alternatively, for whatever reason, you can <a href="lab9menu.php">return to main menu</a>.
+        </div>
+
+        <div class="parag">
+            <form name="signin" method="post" action="lab9signin.php">
+                <input type="text" name="email"> ( e-mail )<br/>
+                <input type="password" name="pass"> (password)<br/>
+                <input type="submit" onclick="return signincheck()"> ( submit )
+            </form>
+
+            <span id="email_error_message"></span><br>
+            <span id="password_error_message"></span>
+        </div>
+    </body>
+</html>
