@@ -8,4 +8,12 @@ a:2:{s:3:"key";a:2:{i:0;s:18:"tabaluga@gmail.com";i:1;s:19:"2021-12-16_16-35-39"
 [tabaluga@gmail.com]2021-12-16_16-35-53114
 a:2:{s:3:"key";a:2:{i:0;s:18:"tabaluga@gmail.com";i:1;s:19:"2021-12-16_16-35-53";}s:4:"note";s:12:"test12345670";}43
 [jaszczur1337@gmail.com]2021-12-16_16-49-39121
-a:2:{s:3:"key";a:2:{i:0;s:22:"jaszczur1337@gmail.com";i:1;s:19:"2021-12-16_16-49-39";}s:4:"note";s:15:"Jestę potworę";}
+a:2:{s:3:"key";a:2:{i:0;s:22:"jaszczur1337@gmail.com";i:1;s:19:"2021-12-16_16-49-39";}s:4:"note";s:15:"Jestę potworę";}46
+[jasnygwint@onomatopeja.pl]2021-12-16_18-56-41113
+a:2:{s:3:"key";a:2:{i:0;s:25:"jasnygwint@onomatopeja.pl";i:1;s:19:"2021-12-16_18-56-41";}s:4:"note";s:5:"Henlo";}46
+[jasnygwint@onomatopeja.pl]2021-12-16_18-58-03121
+a:2:{s:3:"key";a:2:{i:0;s:25:"jasnygwint@onomatopeja.pl";i:1;s:19:"2021-12-16_18-58-03";}s:4:"note";s:12:"Jasny gwint!";}40
+[poczta@postmail.com]2022-01-03_10-59-36116
+a:2:{s:3:"key";a:2:{i:0;s:19:"poczta@postmail.com";i:1;s:19:"2022-01-03_10-59-36";}s:4:"note";s:13:"Hmm let's see";}36
+[jeden@gmail.com]2022-01-19_22-20-39100
+a:2:{s:3:"key";a:2:{i:0;s:15:"jeden@gmail.com";i:1;s:19:"2022-01-19_22-20-39";}s:4:"note";s:2:"yo";}
