@@ -27,3 +27,4 @@ e e c
 f f e
 b b b
 b d c
+a a a
