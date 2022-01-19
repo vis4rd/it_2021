@@ -9,7 +9,7 @@ class View
       
     public function __construct($template)
     {
-        $file = '../template/'.strtolower($template).'.tpl' ;
+        $file = 'template/'.strtolower($template).'.tpl' ;
         if ( file_exists($file) )  
          { $this->_file =  $file ; }
         else

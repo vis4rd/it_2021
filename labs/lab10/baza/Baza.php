@@ -1,6 +1,8 @@
 <?php
  
 namespace baza   ;
+
+include 'baza/Model.php';
  
 use appl\ { View, Controller } ;
 // use appl\Controller ;
@@ -52,9 +54,7 @@ class Baza extends Controller
        $this->layout->content = $text ;
        return $this->layout ; 
     }
- 
- 
- 
+
     function index ()  {
        // $this->layout->content = $text ;
        return $this->layout ; 

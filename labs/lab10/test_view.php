@@ -1,6 +1,6 @@
 <?php
  
-include '../appl/View.php' ;
+include 'appl/View.php' ;
  
 use appl\View ;
  

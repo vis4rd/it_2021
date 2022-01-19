@@ -1,54 +1,45 @@
 <?php
-/***************
- * 
- * 
- ****************/
-function __autoload($class_name) {
-   // print '{'.$class_name.'}' ;
-   $path_to_class = __DIR__. '/' . str_replace('\\', DIRECTORY_SEPARATOR, $class_name) . '.php';
-   if ( file_exists($path_to_class) )  
-      { require_once($path_to_class); }
-   else {
-      header('HTTP/1.1 404 Not Found') ;
-      print '<!doctype html><html><head><title>404 Not Found</title></head><body><p>Invalid URL</p></body></html>' ;
-   }  
+
+include 'user/User.php';
+
+use user\User;
+
+//error_reporting(E_ALL);
+//ini_set("display_errors","On");
+
+//function __autoload($class_name)
+//{
+//	include $class_name . '.php';
+//}
+
+echo "<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' href='css/lab10.css'>
+	<title>Kluczka - Task 10</title>
+</head>
+<body>
+	<div class='parag' id='centercontent'>
+		<h1>Task 10</h1>
+	</div>";
+$reg = new User;
+if($reg->_is_logged())
+{
+	$t1 = file_get_contents('template/menu.tpl');
+	echo $t1;
+}
+else
+{
+	echo file_get_contents('template/menu.tpl');
 }
 
-error_reporting(E_ALL);
-ini_set("display_errors","On");
-                
-use info\Info ;
-use baza\Baza ;
-use test\Test ;
- 
-try {
- 
-  if (empty ($_GET['sub']))    { $contr = 'Info' ;   }
-  else                         { $contr = $_GET['sub'] ; }
- 
-  if (empty ($_GET['action'])) { $action     = 'index' ;  }
-  else                         { $action     = $_GET['action'] ; } 
-   
-  //print $contr. ' ' . $action .' - ';
-   
-  switch ($contr) {           
-     case 'Info' :
-       $contr = "info\\".$contr ;                      
-       break ;
-     case 'Baza' :
-       $contr = "baza\\" . $contr ;
-       break ;  
-  }
-  $controller = new $contr ;
-  echo $controller->$action() ;
+echo "
+	</nav>";
+if($reg->_is_logged())
+{
+	echo "<div class='parag'> (Currently logged in as " . $_SESSION['user'] . ").";
 }
-catch (Exception $e) {
-  // echo 'Blad -.- : [' . $e->getCode() . '] ' . $e->getMessage() . '</br>' ;
-  // echo __CLASS__.':'.__LINE__.':'.__FILE__ ;
-  // $contr = new info() ;
-  // echo $contr->error ( $e->getMessage() ) ;
-  echo 'Error: [' . $e->getCode() . '] ' . $e->getMessage() ;
- 
-}
- 
+echo "</body></html>";
+
 ?>

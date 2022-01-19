@@ -1,11 +1,8 @@
 <?php
-
-namespace test ;
-
-//error_reporting(E_ALL);
-//ini_set("display_errors","On");
  
- use appl\ { View, Controller } ;
+namespace test ;
+ 
+use appl\ { View, Controller } ;
 // use appl\Controller ;
  
 class Test extends Controller {

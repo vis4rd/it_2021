@@ -1,6 +1,10 @@
 <?php
  
 namespace info ;
+
+include 'appl/Controller.php';
+include 'appl/View.php';
+include 'info/Model.php';
  
 use appl\ { View, Controller } ;
 // use appl\Controller ;
@@ -16,7 +20,7 @@ class Info extends Controller {
       $this->layout->css = $this->css ;
       // $this->layout->css = "<link rel=\"stylesheet\" href=\"css/main.css\" type=\"text/css\" media=\"screen\" >" ;  
       $this->layout->menu = $this->menu ;
-      // $this->layout->menu = file_get_contents ('template/menu.tpl') ;
+    //   $this->layout->menu = file_get_contents ('template/menu.tpl') ;
       $this->layout->title = 'Simple MVC' ;
    }
  

@@ -1,22 +1,12 @@
 <?php
-/***************
- * 
- * 
- ****************/
-function __autoload($class_name) {
-   // print '{'.$class_name.'}' ;
-   $path_to_class = __DIR__. '/' . str_replace('\\', DIRECTORY_SEPARATOR, $class_name) . '.php';
-   if ( file_exists($path_to_class) )  
-      { require_once($path_to_class); }
-   else {
-      header('HTTP/1.1 404 Not Found') ;
-      print '<!doctype html><html><head><title>404 Not Found</title></head><body><p>Invalid URL</p></body></html>' ;
-   }  
-}
 
 error_reporting(E_ALL);
-ini_set("display_errors","On");
-                
+        ini_set("display_errors","On");
+
+include 'info/Info.php';
+include 'baza/Baza.php';
+include 'test/Test.php';
+
 use info\Info ;
 use baza\Baza ;
 use test\Test ;
@@ -29,7 +19,7 @@ try {
   if (empty ($_GET['action'])) { $action     = 'index' ;  }
   else                         { $action     = $_GET['action'] ; } 
    
-  //print $contr. ' ' . $action .' - ';
+  // print $contr. ' ' . $action .' - ';
    
   switch ($contr) {           
      case 'Info' :
@@ -37,7 +27,7 @@ try {
        break ;
      case 'Baza' :
        $contr = "baza\\" . $contr ;
-       break ;  
+       break ;
   }
   $controller = new $contr ;
   echo $controller->$action() ;
