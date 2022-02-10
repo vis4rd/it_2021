@@ -1,3 +1,6 @@
 [submodule "project1"]
 	path = project1
 	url = https://github.com/vis4rd/it_project_1_2021
+[submodule "project2"]
+	path = project2
+	url = https://github.com/vis4rd/it_project_2_2021.git
